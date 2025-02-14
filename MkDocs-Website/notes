@@ -1,0 +1,19 @@
+get the rss/xml of the blog/website
+    http://127.0.0.1:8000/feed_rss_created.xml
+
+mkdocs serve
+
+
+.authors.yml, meta data about authors, can add 1 or more authors to each blog post
+ the slug is how you intend to set up the url name
+
+ in our case "slug: my-first-post" would set the url as follows:
+    http://127.0.0.1:8000/my-first-post/
+
+
+RSS feed
+http://127.0.0.1:8000/my-first-post/
+basically allows us to publish whenever a new post gets created on our site
+
+
+https://martinjerryward.github.io/MkDocs-Website/

@@ -1,0 +1,139 @@
+site_name: mjward
+site_description: A personal website for projects and guides, built with Material for MkDocs.
+site_url: https://martinjerryward.github.io/MkDocs-Website/
+
+nav:
+  - 🛠️ Projects: projects.md
+  - 🧠 Topics Explained:
+      - ✍ Conway's Game of Life: topics_explained/Conways_Game_of_Life/GOL.md
+      - 🔍 K-Means Clustering: topics_explained/K-Means_Clustering/k-means_clustering.md  
+      - 🌲 Isolation Forest: topics_explained/Isolation_Forest/isolation_forest.md
+  - ✍️ Markdown Tutorials:
+      - ✍ Markdown Formatting: Markdown_Tutorials/formatting.md
+      - 📋 Markdown Lists: Markdown_Tutorials/lists/lists.md
+      - 🔗 Markdown Links: Markdown_Tutorials/links/links.md
+      - 🖼 Images: Markdown_Tutorials/images/images.md
+      - 📊 Markdown Tables: Markdown_Tutorials/tables.md
+      - 💻 Markdown Code Blocks: Markdown_Tutorials/code_blocks.md
+      - 📊 Markdown Diagrams: Markdown_Diagrams.md
+      - 🎯 Advanced Markdown Features: Markdown_Tutorials/advanced.md
+  - 🌀 Blender:
+      - 📚 Merge Object: blender/merge_two_objects/merge_two_objects.md
+  - 💼 Resume/Job Application:
+      - 📄 Resume: JobApplication/resume.md
+      - 📄 Workterm-1: JobApplication/workterm1.md
+      - 📄 Workterm-2: JobApplication/workterm2.md
+      - 📄 Workterm-3: JobApplication/workterm3.md
+  - 🎓 Class Info: class_info/index.md    
+  - ❓ Miscellaneous:
+      - 📂 Test DEMO: testDEMO.md
+      - 🏷 Tags: tags.md
+      - 🌀 Perlin Flow Field: PerlinFlowField.md
+      - 📈 Perlin Noise 1D: PerlinNoise-1D.ipynb
+      - 📈 Perlin Noise 2D: PerlinNoise-2D.ipynb
+      - 🌀 Perlin Noise: PerlinNoise.md
+      - 🎨 p5 Example: p5Example.md
+      - 🎛 Three.js UI Example: ThreeJsUiExample.md
+      - 🔘 Three.js Button Example: ThreeJsButton.md
+      - 🖥 Three.js Example: three_example.html
+      - 📓 Example Notebook: example_notebook.ipynb
+      - 🛠 Temp Perlin: temp_perlin.ipynb
+      - 🎞 Perlin Noise Animation: perlin_noise_animation.mp4
+      - 📝 Draft: draft.md
+  - 📝 Notes: notes/notes.md
+  - 🧪 Demo: demo/testDEMO.md
+  
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  features:
+    - content.code.copy
+    # - toc.integrate  # Moves the ToC into the sidebar
+    # - navigation.sections  # Groups navigation by sections
+  palette:
+    - scheme: slate  # Dark Mode
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: deep orange
+      accent: deep purple
+    - scheme: default  # Light Mode
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+  icon:
+    logo: material/library  # Custom icon
+
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+  - mkdocs-jupyter  # Support for Jupyter Notebooks
+  - mkdocs-video:   # Embedded video support
+      is_video: true
+      video_autoplay: false
+  - rss:  # RSS Feed
+      match_path: "posts/.*"
+      pretty_print: true
+      date_from_meta:
+        as_creation: date.created
+        as_updated: date.updated
+
+
+extra:
+  copyright:
+    text: "© 2025 Martin Ward. All rights reserved."
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/martinjerryward
+      name: "GitHub Profile"
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/martin-ward-335505235
+      name: "LinkedIn Profile"
+  generator: false
+
+
+docs_dir: docs
+
+extra_css:
+  - assets/custom.css
+
+extra_javascript:
+  - assets/
+
+
+markdown_extensions:
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+      toc_depth: 2
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          # format: !!python/name:pymdownx.superfences.fence_code_format
+  
+# extra_javascript:
+# - https://polyfill.io/v3/polyfill.min.js?features=es6
+# - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js
+# - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js
+
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
+

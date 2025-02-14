@@ -1,0 +1,18 @@
+authors:
+  james:
+    name: James Willett
+    description: Developer
+    # avatar: https://avatars.githubusercontent.com/u/690
+    avatar: https://yt3.ggpht.com/9wJlCwU9QMDJfD2eXVmF3fHLDwnkZbD8CetZdLcYVXpGb0h-ec_wQ_GWvwzckkYNuYl3oDhS8Rk=s48-c-k-c0x00ffffff-no-rj
+    url: https://www.youtube.com/watch?v=pPEUhfTZswc&t=116s
+
+  martin:
+    name: Martin Ward
+    description: Programmer
+    avatar: https://avatars.githubusercontent.com/u/114336244?v=4
+    url: https://mjward.io/
+
+  squidfunk:
+    name: Martin Donath
+    description: Creator
+    avatar: https://github.com/squidfunk.png
