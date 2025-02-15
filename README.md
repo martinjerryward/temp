@@ -8,3 +8,7 @@ trigger timestamp when audio sound made
 
 (whisperAI)
 https://www.youtube.com/watch?v=YQWNuRTCcUk
+
+autorig ai?
+
+https://www.youtube.com/watch?v=jkpUfjNeSfk
